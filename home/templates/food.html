@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Document</title>
+</head>
+<body style="background: skyblue;">
+    <h1>Food page</h1>
+
+    <div>
+        {% for shal in barth %}
+            <div>
+                <a href=""><p>Name:{{shal.type}}</p></a>
+                <p>Image <img src="{{shal.image.url}}"></p>
+                <p>Recipe:{{shal.recipe}}</p>
+                <p>Duration:{{shal.duration}}</p>
+                <p>Prep:{{shal.prep}}</p>
+                <p>Method:{{shal.method}}</p>
+                <p>Utensils:{{shal.utensils}}</p>
+                <p>Procedure:{{shal.procedure}}</p> 
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+</body>
+</html>
